@@ -9,9 +9,49 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #333333;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+body { font-family: "Noto Sans KR", serif;  } 
+textarea,
+input { border:1px solid #B3B3B3; display: block; border-radius: 5px; padding: 16px 15px; width: 100%; 
+  resize: none; }
+textarea:focus,
+input:focus { border-radius: 5px; outline: none; border:1px solid #000; }
+
+input::placeholder {
+  font-weight: 400;
+  color: #B3B3B3;
+}
+label { color: #333333; font-weight: bold; margin-bottom: 9px; display: block; }
+
+button { width: 100%; display: block; padding: 15px 0; font-size: 1rem; background: #000; color: #fff; border-radius: 5px; margin-top: 10px; font-weight: 500; }
+button.notActive { background: #9C9C9C; pointer-events: none; }
+button.line { background: #fff; color: #000; border: 1px solid #000; }
+
+.ReactModal__Overlay { background: rgba(0,0,0,.5) !important; backdrop-filter: blur(10px); }
+.ReactModal__Content { max-width: 1200px;  margin:  auto; width: calc(100% - 30px); inset: unset !important; left: 50% !important; top: 50% !important;  transform: translate(-50%, -50%); max-height: 80vh; overflow: auto; }
+.ReactModal__Content {  }
+
+/* 스크롤바 전체 기본 꾸미기 */
+.ReactModal__Content::-webkit-scrollbar {
+  background: #eee; /* 스크롤바 막대 색상 */
+    border: 2px solid #9b6a2f; /* 스크롤바 막대 테두리 설정  */
+    border-radius: 12px 12px 12px 12px;
+    width: 5px;
+}
+
+/* 스크롤바 막대 꾸미기 */
+.ReactModal__Content::-webkit-scrollbar-thumb {
+  background-color:#999;
+}
+
+/* 스크롤바 트랙 꾸미기 */
+.ReactModal__Content::-webkit-scrollbar-track {
+  background: #eee; 
 }
