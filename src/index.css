@@ -55,3 +55,40 @@ button.line { background: #fff; color: #000; border: 1px solid #000; }
 .ReactModal__Content::-webkit-scrollbar-track {
   background: #eee; 
 }
+
+header.scroll { background: none !important; color: #fff !important; border-bottom: 1px solid #fff !important; }
+header.scroll h2 { color: #fff !important; }
+
+header.scroll i { background: #fff; }
+header i { background: #000; transition: all .3s; transform-origin: center; }
+
+.side-menu { color: #000; }
+
+footer nav li { position: relative; display: block; }
+footer nav li a { display: block; padding: 0 37px; }
+footer nav li:first-child a { padding-left: 0; }
+footer nav li:last-child a { padding-right: 0; }
+footer nav li::after { content: ""; position: absolute; display: block; width: 1px; height: 7px; right: 0; top: calc(50% - 3.5px); background: #000; }
+footer nav li:last-child:after { display: none; }
+
+header img { margin-right: 8px; }
+header .logob { display: none; }
+header.scroll .logow { display: none; }
+header.scroll .logob { display: block; }
+
+@media screen and (max-width: 1000px){
+
+  footer nav li a { padding: 0 16px; }
+}
+@media screen and (max-width: 800px){
+  header.open { background: #fff !important; color: #000 !important; border-bottom: 1px solid #000000 !important; }
+  header.open h2 { color: #000 !important; }
+  header.open i { background: #000; transition: all .3s; transform-origin: center; }
+
+  footer nav li a { padding: 0 8px; }
+
+  header.open .logow { display: block; }
+  header.open .logob { display: none ; }
+  
+  
+}
