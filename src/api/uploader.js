@@ -15,10 +15,6 @@ export async function uploadImage(file){
     .then((data) => data.url);
 }
 
-
-
-
-
 export async function deleteImage(publicId) {
     url = `https://api.cloudinary.com/v1_1/${cloudName}/image/destroy`;
 

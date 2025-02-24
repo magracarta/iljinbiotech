@@ -6,6 +6,7 @@ import Main from "./admin/page/Main";
 import ProductRegistration from "./admin/page/ProductRegistration";
 import ProtectedRoute from "./admin/page/ProtectedRoute";
 import NotFound from "./common/NotFound";
+import MainPage from "./user/page/MainPage";
 import User from "./user/User";
 
 
@@ -13,7 +14,10 @@ export const menu = [
     {
         path:"/",
         element:<User/>,
-        errorElement:<NotFound/>
+        errorElement:<NotFound/>,
+        children:[
+            {index:true, element: <MainPage/> }
+        ]
 
     },
     {   //관리자 페이지
