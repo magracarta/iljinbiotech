@@ -3,11 +3,11 @@ import Nav from './Nav';
 
 export default function Footer() {
     return (
-        <footer className='bg-[#EFEFEF] py-[134px] max-lg:py-[100px] max-md:py-[64px]  max-lg:text-[13px]'>
+        <footer className='bg-[#EFEFEF] py-[134px] max-lg:py-[100px]  max-lg:py-[64px]  max-lg:text-[13px]'>
             <div className='max-w-[1532px] w-[100%] px-4 mx-auto flex justify-between'>
-                <div className='max-md:w-[100%]'>
-                    <h2 className='text-4xl font-bold mb-9 max-md:mb-4 max-lg:text-[30px] max-md:text-2xl'>(주)일진바이오텍</h2>
-                    <nav className="max-md:block hidden mb-6 mt-7">
+                <div className=' max-lg:w-[100%]'>
+                    <h2 className='text-4xl font-bold mb-9  max-lg:mb-4 max-lg:text-[30px]  max-lg:text-2xl'>(주)일진바이오텍</h2>
+                    <nav className=" max-lg:block hidden mb-6 mt-7">
                         <ul className='flex text-[13px] font-medium'>
                             <Nav/>
                         </ul>
@@ -20,7 +20,7 @@ export default function Footer() {
                     </p>
                     <span>© 2025 (주) 일진바이오텍. All rights reserved</span>
                 </div>
-                <nav className='max-md:hidden'>
+                <nav className=' max-lg:hidden'>
                     <ul className='flex max-lg:text-base font-medium'>
                         <Nav/>
                     </ul>
