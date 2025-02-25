@@ -1,0 +1,20 @@
+[
+    {
+        "title":"iljinbiotEch\n(주)일진바이오텍",
+        "subtitle":"미래의 생명공학을 창조해나가는 일진바이오텍",
+        "img" : "/img/main/mailslide1.png",
+        "imgMo":"/img/main/mainslideMo1.png"
+    },
+    {
+        "title":"기술중심\n제품중심 고객중심",
+        "subtitle":"성장하기위해 노력하고 있습니다.",
+        "img" : "/img/main/mailslide2.png",
+        "imgMo":"/img/main/mainslideMo2.png"
+    },
+    {
+        "title":"인류의 건강하고,\n행복한 삶을 향한 건강",
+        "subtitle":"보장받을수 있도록 지속적으로 노력할것입니다.",
+        "img" : "/img/main/mailslide3.png",
+        "imgMo":"/img/main/mainslideMo3.png"
+    }
+]
