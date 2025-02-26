@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { v4 as uuidv4 } from 'uuid';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -18,7 +17,7 @@ export default function Mainslide() {
         }).catch(console.error);        
     },[]);
     return (
-        <div className="slideContainer relative  max-lg:h-[166.78vw] h-[50.1vw]">
+        <div className="slideContainer relative  max-lg:h-[166.78vw] h-[50.1vw] on">
             {mainSlide&&<Swiper
                 spaceBetween={0}
                 autoplay={{
@@ -34,14 +33,14 @@ export default function Mainslide() {
                 navigation={true}
                 modules={[Parallax,Autoplay, Pagination, Navigation]}
                 className="mySwiper">
-                {mainSlide&&mainSlide.map((el,idx)=><SwiperSlide key={uuidv4()}>
+                {mainSlide&&mainSlide.map((el,idx)=><SwiperSlide key={el.title+idx}>
                     <div className='text-white relative text-center '>
                        <img className='w-[100%]  max-lg:hidden' src={el.img} alt={el.img}/>
                        <img className='w-[100%] hidden  max-lg:block' src={el.imgMo} alt={el.imgMo} />
                        <div className='textbox absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] z-[2] w-[100%]'>
                             <h1 data-swiper-parallax="-1000"
                             className='text-[2.86vw] font-bold uppercase leading-[1.4em]  max-lg:text-[8vw]
-                            '>{el.title.split("\n").map(el=><span key={uuidv4()} className='block'>{el}</span>)}</h1>
+                            '>{el.title.split("\n").map((el, idx)=><span key={el+idx} className='block'>{el}</span>)}</h1>
                             <p data-swiper-parallax="-1500"
                             className='text-[1.041vw] mt-7  max-lg:text-[4.2vw]'>{el.subtitle}</p>
                        </div>

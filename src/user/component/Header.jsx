@@ -11,7 +11,8 @@ export default function Header() {
 
     useEffect(()=>{
         const headerEl = header.current;
-        if(window.location.pathname === "/") headerEl.classList.add("scroll");
+        if(path.pathname === "/") headerEl.classList.add("scroll");
+        else headerEl.classList.remove("scroll");
         let before = 0;
         let scrollEvent = ()=>{
             let currunt = window.scrollY;
@@ -26,7 +27,7 @@ export default function Header() {
         return ()=>{
             window.removeEventListener("scroll", scrollEvent);
         }
-    },[header]);
+    },[header, path]);
     useEffect(()=>{
         window.scrollTo({top:0});
     },[path]);

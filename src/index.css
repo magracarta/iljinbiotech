@@ -95,3 +95,37 @@ header.scroll .logob { display: block; }
 }
 
 .title { line-height: 1.4em !important; }
+
+.ReactModal__Overlay { z-index: 10000; }
+
+.ReactModal__Body--open { overflow: hidden; }
+
+.ani1 ,
+.ani2 ,
+.ani3 ,
+.ani4 ,
+.ani5 ,
+.ani6 ,
+.ani7 { opacity: 0; transform: translate(0 , -50px); }
+
+.on .ani1 { animation: animation  1.4s forwards; }
+.on .ani2 { animation: animation  1.8s forwards;  }
+.on .ani3 { animation: animation  2.6s forwards;  }
+.on .ani4 { animation: animation 3.4s forwards;  }
+.on .ani5 { animation: animation 5.3s forwards; }
+.on .ani6 { animation: animation 5.6s forwards; }
+.on .ani8 { animation: animation 5.9s forwards; }
+.on .ani10 { animation: animation 6.2s forwards; }
+.on .ani12 { animation: animation 6.5s forwards; }
+.on .ani14 { animation: animation 6.8s forwards; }
+.on .ani15 { animation: animation 7.1s forwards; }
+.on .ani16 { animation: animation 7.4s forwards; }
+.on .ani18 { animation: animation 7.7s forwards; }
+
+
+
+
+@keyframes animation {
+  0% { opacity: 0; transform: translate(0 , -80px); }
+  100%{ opacity: 1; transform: translate(0 , 0px); }
+}

@@ -13,18 +13,17 @@
 .slideContainer .swiper-button-next { color: #fff;  }
 
 
-.slideContainer .swiper-button-prev { left:90px; }
-.slideContainer .swiper-button-next { right:90px; }
+.slideContainer .swiper-button-prev { left:150px; }
+.slideContainer .swiper-button-next { right:150px; }
 
 .slideContainer .swiper-button-prev::after { content: url('../../../public/img/arrowButton.svg');  }
 .slideContainer .swiper-button-next::after { content: url('../../../public/img/arrowButton.svg'); transform: rotate(180deg);  }
 
-.slideContainer .swiper-slide .textbox {  }
 .slideContainer .swiper-slide .textbox h1 ,
-.slideContainer .swiper-slide .textbox p { opacity: 0; transform: translate(0, -80px);  transition: all 1s; }
-.slideContainer .swiper-slide .textbox h1 { transition: all 1.5s; }
-.slideContainer .swiper-slide.swiper-slide-active .textbox p ,
-.slideContainer .swiper-slide.swiper-slide-active .textbox h1 { opacity: 1; transform: translate(0,0); }
+.slideContainer .swiper-slide .textbox p { opacity: 0; top: -80px; position: relative; }
+
+.slideContainer .swiper-slide .textbox h1 {  animation: slideTextAni 1.5s forwards; }
+.slideContainer .swiper-slide .textbox p { animation: slideTextAni 2.5s forwards; }
 
 @keyframes lineani {
     0% {
@@ -34,6 +33,17 @@
       transform: translate(0, 40px);
     }
 }
+
+@keyframes slideTextAni {
+  0% {
+    opacity: 0; top: -80px;
+  }
+  100% {
+    opacity: 1; top: -0px;
+  }
+}
+
+
 
 
 
