@@ -17,7 +17,7 @@ export default function Production() {
                         <li className='w-[calc(33.333%-11px)] overflow-hidden relative ani max-lg:w-[calc(50%-11px)]'
                             style={{ animationDuration: `400ms` }}
                         >
-                            <video autoPlay loop muted className='absolute top-[50%] translate-y-[-50%]'>
+                            <video autoPlay loop muted className='absolute top-[50%] translate-y-[-50%]' poster="" preload="">
                                 <source src='/img/production/video.mp4' type='video/mp4'/>
                             </video>
                         </li>
