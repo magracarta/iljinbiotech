@@ -17,7 +17,7 @@ export default function Products() {
            <div className='max-w-[1230px] px-4 mx-auto pt-[60px] pb-[144px]  max-lg:pt-[30px]  max-lg:pb-[80px]'>
                 <div className='flex flex-wrap justify-left pt-[80px] pb-[90px] gap-[20px] gap-y-11
                          max-lg:flex-col max-lg:gap-[20px] max-lg:pb-[55px] max-lg:pt-[40px]'>
-                    {products&&products.map((el,idx)=><ProductThumnail key={el.title} img={el.img} title={el.title} sub={el.sub} description={el.description} cn={`ani`+((idx+1)*2)}/>)}
+                    {products&&products.map((el,idx)=><ProductThumnail key={el.title} img={el.img} title={el.title} sub={el.sub} description={el.description} cn={(idx+1)*2}/>)}
                 </div>
            </div>
         </div>

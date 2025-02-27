@@ -14,6 +14,9 @@ import Vision from "./user/component/company/Vision";
 import Overview from "./user/component/company/Overview";
 import Direction from "./user/component/company/Direction";
 import Products from "./user/page/Products";
+import Production from "./user/page/Production";
+import Patent from "./user/page/Patent";
+import Recruit from "./user/page/Recruit";
 
 
 export const menu = [
@@ -33,7 +36,10 @@ export const menu = [
                     {path:"direction", element:<Direction/>}
                 ]
             },
-            {path:"products", element:<Products/>}
+            {path:"products", element:<Products/>},
+            {path:"production", element:<Production/>},
+            {path:"patent", element:<Patent/>},
+            {path:"recruit", element:<Recruit/>}
         ]
 
     },
