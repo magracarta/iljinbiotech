@@ -10,8 +10,8 @@ export default function CeoGreeting() {
                 <div className='pb-[38px] border-b border-[#E6E6E6] max-lg:pt-0 max-lg:border-b-0 max-lg:border-l-4 max-lg:border-black
                     max-lg:mt-10  max-lg:pb-0 max-lg:mb-[26px] max-lg:pl-5 ani2 
                 '>
-                    <span className='text-[20px] text-black font-medium mb-2 block
-                        max-lg:text-base max-lg:font-normal 
+                    <span className='text-[20px] text-black font-medium mb-5 block
+                        max-lg:text-base max-lg:font-normal max-lg:mb-2
                     '>미래의 젊고 활기찬 건강기능 제품을 <br className='hidden max-lg:block'/>연구 개발 생산하는 </span>
                     <h2 className='text-black text-[45px] font-bold leading-[1em] max-lg:text-[32px]'>일진바이오텍</h2>
                 </div>

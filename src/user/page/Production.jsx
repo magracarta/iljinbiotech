@@ -15,8 +15,7 @@ export default function Production() {
                 <div className='max-w-[1230px] px-4 mx-auto pt-[80px] pb-[180px]  max-lg:pt-[60px]  max-lg:pb-[80px] '>
                     <ul className='flex flex-wrap gap-4'>
                         <li className='w-[calc(33.333%-11px)] overflow-hidden relative ani max-lg:w-[calc(50%-11px)]'
-                            style={{ animationDuration: `400ms` }}
-                        >
+                            style={{ animationDuration: `400ms` }} >
                             <video autoPlay loop muted className="absolute top-[50%] translate-y-[-50%] w-full h-full object-cover" style={{ pointerEvents: 'none' }} >
                                 <source src='/img/production/video.mp4' type='video/mp4'/>
                             </video>
