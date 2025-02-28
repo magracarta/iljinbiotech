@@ -7,10 +7,10 @@ export default function ProductThumnail({img,title,sub,description,cn}) {
         <div className={`w-[calc(33.333%-13.333px)] text-center max-lg:w-[100%] shadow-center rounded-md ani`}
         style={{ animationDuration: `${(cn) * 400}ms` }}
         >
-            <div className='pt-[100px] max-lg:pt-[10.70vw] cursor-pointer' onClick={()=>{setOp(true)}}>
-                <img className='w-[50%] mx-auto pb-[66px] max-lg:pb-[8.8vw]' src={`/img/products/${img}`} alt={img}/>
+            <div className='pt-[100px] max-lg:pt-[10.70vw] cursor-pointer ' onClick={()=>{setOp(true)}}>
+                <img className='w-[50%] mx-auto pb-[166px] max-lg:pb-[20.8vw]' src={`/img/products/${img}`} alt={img}/>
                 <span className='block py-[35px] text-[20px] border-t border-[#F4F4F4] text-black font-regular max-lg:text-[3.73vw]
-                 max-lg:py-[5.47vw]
+                 max-lg:py-[5.47vw] absolute bottom-0 left-0 w-[100%]
                 '>{title}</span>
             </div>
 
