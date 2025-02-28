@@ -124,7 +124,7 @@ header.scroll .logob { display: block; }
 .on .ani16 { animation: animation 7.4s forwards; }
 .on .ani18 { animation: animation 7.7s forwards; }
 
-
+.side-menu a { width: 100%; display: block; }
 
 
 @keyframes animation {
