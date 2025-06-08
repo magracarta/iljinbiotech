@@ -17,7 +17,7 @@ export default function Header() {
         let scrollEvent = ()=>{
             let currunt = window.scrollY;
             if(currunt < before || currunt < 150)headerEl.style.top = "0px";
-            else headerEl.style.top = "-100px";
+            else headerEl.style.top = "-150px";
             before = window.scrollY;
             if(window.location.pathname !== "/") return;
             if(window.scrollY > 100) headerEl.classList.remove("scroll");
@@ -40,7 +40,7 @@ export default function Header() {
                     <img className='logob' src="/img/logoblack.svg" alt='logo'/>
                     iljinbiotEch
                 </h2>
-                <nav className=' max-lg:hidden'>
+                <nav className='subMenu max-lg:absolute max-lg:top-[71px] '>
                     <ul className='flex gap-12 font-medium'>
                         <Nav/>
                     </ul>
@@ -50,12 +50,14 @@ export default function Header() {
                     <i className={`w-[100%] h-[1px] absolute left-0 top-[50%] ${open ? `hidden` : `block` }`}></i>
                     <i className={`w-[100%] h-[1px] absolute left-0  ${open ? `top-[50%] -rotate-45`:` top-[100%]`}`}></i>
                 </div>
+                
             </div>
             <div className={`side-menu hidden  max-lg:block fixed w-[100%] top-[72px] bg-white h-[calc(100%-72px)] ${open?`left-0`:`left-[-100%]`} transition-all duration-700 `}>
                 <ul className='flex flex-col gap-y-6 p-4 text-[18px] font-medium'>
                     <Nav setOpen={setOpen}/>
                 </ul>
             </div>
+            
         </header>
     );
 }

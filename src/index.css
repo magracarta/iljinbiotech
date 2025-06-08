@@ -92,6 +92,7 @@ header.scroll .logob { display: block; }
   header.open .logob { display: none ; }
   
   
+  
 }
 
 .title { line-height: 1.4em !important; }
@@ -140,4 +141,11 @@ header.scroll .logob { display: block; }
     100%{ opacity: 1; transform: translate(0 , 0px); }
   }
 
+
+
+  header .subMenu { background: #fff; transition: all .6s; left: 0; width: 100%;  }
+  header.scroll .subMenu { background: transparent; }
+  header .subMenu ul { gap: 0; display: flex; display: flex; width: 100%; align-content: center; justify-content: space-around;
+   padding: 10px 0 15px;
+  }
 }
