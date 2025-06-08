@@ -10,7 +10,7 @@ export default function Patent() {
     
     
     return (
-       <div className='pt-[88px] max-lg:pt-[71px] on'>
+       <div className='pt-[88px] max-lg:pt-[120px] on'>
             <TitleBanner title={"특허 및 인허가"} img={"patent.png"}/>
             <div className='max-w-[1230px] px-4 mx-auto pt-[80px] pb-[180px]  max-lg:pt-[60px]  max-lg:pb-[80px] '>
                 <ul className='flex flex-wrap gap-x-4 gap-y-11'>

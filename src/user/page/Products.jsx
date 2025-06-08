@@ -12,7 +12,7 @@ export default function Products() {
                 }).catch(console.error);        
          },[]);
     return (
-        <div className='pt-[88px] max-lg:pt-[71px] on'>
+        <div className='pt-[88px] max-lg:pt-[120px] on'>
            <TitleBanner title={"제품정보"} img={"products.png"}/>
            <div className='max-w-[1230px] px-4 mx-auto pt-[60px] pb-[144px]  max-lg:pt-[30px]  max-lg:pb-[80px]'>
                 <div className='flex flex-wrap justify-left pt-[80px] pb-[90px] gap-[20px] gap-y-11

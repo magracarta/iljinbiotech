@@ -4,7 +4,7 @@ import RecruitArrow from '../component/recruit/RecruitArrow';
 
 export default function Recruit() {
     return (
-        <div className='pt-[88px] max-lg:pt-[71px] on'>
+        <div className='pt-[88px] max-lg:pt-[120px] on'>
             <div className='max-w-[1530px] px-4 mx-auto pt-[80px] pb-[180px]  max-lg:pt-[30px]  max-lg:pb-[80px] '>
                 <div className='text-center'>
                     <h2 className='ani1 text-[55px] font-bold mb-7 max-lg:text-[28px] max-lg:mb-5'>인재채용</h2>
