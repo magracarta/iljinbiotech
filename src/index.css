@@ -146,6 +146,6 @@ header.scroll .logob { display: block; }
   header .subMenu { background: #fff; transition: all .6s; left: 0; width: 100%;  }
   header.scroll .subMenu { background: transparent; }
   header .subMenu ul { gap: 0; display: flex; display: flex; width: 100%; align-content: center; justify-content: space-around;
-   padding: 10px 0 15px;
+   padding: 10px 0 15px; font-size: 14px;
   }
 }
